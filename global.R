@@ -41,6 +41,10 @@ set_dir <- function(){
 load_packages <- function(){
   library(lubridate)
   library(stringr)
+  library(DT)
+  library(shinydashboard)
+  library(dplyr)
+  library(TTR)
 }
 
 
@@ -48,3 +52,4 @@ load_packages()
 dates <- get_dates()
 all_prices <- get_prices()
 sp500 <- get_sp500()
+choice <- unique(dates$ticker)
