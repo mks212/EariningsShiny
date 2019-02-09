@@ -82,8 +82,10 @@ get_dates <- function(){
       df <- read.csv(file, stringsAsFactors = FALSE)
       colnames(df) <- 'date'
       df$time <-substr(df$date, start = nchar(df$date) - 2, nchar(df$date))
+      df$time <- gsub(pattern = ' ', replacement = '', x = df$time)
       df$date <- substr(df$date, start = 1, nchar(df$date) - 2)
       df$date <- mdy(df$date)
+      df <- df[order(df$date),]
       df$ticker <- ticker
       return(df)
     }))

@@ -18,8 +18,12 @@ shinyUI(dashboardPage(
                 infoBoxOutput("negBox")
               ),
               fluidRow(
-                box(plotOutput("barPlot")),
+                box(plotOutput("postPlot")),
                 box(plotOutput("season_ratePlot"))
+              )
+              ,
+              fluidRow(
+                box(plotOutput("prePlot"))
               )
         )#dashboardBody
   )#page
