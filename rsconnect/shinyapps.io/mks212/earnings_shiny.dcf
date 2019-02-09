@@ -5,6 +5,6 @@ account: mks212
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 702771
-bundleId: 1865266
+bundleId: 1865913
 url: https://mks212.shinyapps.io/earnings_shiny/
-when: 1549669280.68922
+when: 1549725939.67214
